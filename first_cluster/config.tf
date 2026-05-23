@@ -31,4 +31,8 @@ resource "kubernetes_persistent_volume_claim" "data_pvc" {
     }
     storage_class_name = "standard" 
   }
+
+  lifecycle {
+    prevent_destroy = false
+  }
 }
