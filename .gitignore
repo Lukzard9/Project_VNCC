@@ -2,3 +2,4 @@
 *.tfstate
 *.tfstate.backup
 *.hcl
+tf-kind-cluster-config
