@@ -16,12 +16,17 @@ terraform {
       source  = "hashicorp/tls"
       version = "~> 4.0.0"
     }
+    local = {
+      source  = "hashicorp/local"
+      version = "~> 2.4.0"
+    }
   }
 }
 
 provider "kind" {}
 provider "random" {}
 provider "tls" {}
+provider "local" {}
 
 provider "kubernetes" {
   host                   = kind_cluster.local_cluster.endpoint
