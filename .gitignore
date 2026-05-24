@@ -4,3 +4,4 @@
 *.hcl
 *-config
 *.env
+*.info
