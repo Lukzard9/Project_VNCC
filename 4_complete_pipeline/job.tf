@@ -9,7 +9,7 @@ resource "kubernetes_job" "db_migration" {
         container {
           name    = "migrator"
           image   = "busybox:latest"
-          command = ["sh", "-c", "echo 'Esecuzione migrazione DB in corso...'; sleep 15; echo 'Migrazione completata!'"]
+          command = ["sh", "-c", "echo 'Esecuzione migrazione DB in corso...'; sleep 15; echo 'Migrazione completata'"]
         }
         restart_policy = "Never"
       }
